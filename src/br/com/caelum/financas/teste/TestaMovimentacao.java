@@ -49,5 +49,7 @@ public class TestaMovimentacao {
 		em.persist(mov2);
 		em.persist(mov3);
 		em.getTransaction().commit();
+		
+		em.close();
 	}
 }

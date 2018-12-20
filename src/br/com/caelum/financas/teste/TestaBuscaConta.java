@@ -18,6 +18,8 @@ public class TestaBuscaConta {
 	conta.setTitular("O cãozinho dos teclados");
 	em.getTransaction().commit();
 	
+	em.close();
+	
 	System.out.println(conta.getTitular());
 }
 }
